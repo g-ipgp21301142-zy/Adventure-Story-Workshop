@@ -1,0 +1,28 @@
+{
+  "students": {},
+  "teachers": {
+    "admin": {
+      "password": "teacher123"
+    }
+  },
+  "stories": [
+    {
+      "id": 1,
+      "title": "Jungle Adventure",
+      "content": "Write a short paragraph about a jungle adventure.",
+      "badge": "gold-medal"
+    },
+    {
+      "id": 2,
+      "title": "Market Mystery",
+      "content": "Write a short paragraph about a market scene.",
+      "badge": "medal-"
+    },
+    {
+      "id": 3,
+      "title": "Island Surprise",
+      "content": "Write a short paragraph about an island discovery.",
+      "badge": "medal"
+    }
+  ]
+}

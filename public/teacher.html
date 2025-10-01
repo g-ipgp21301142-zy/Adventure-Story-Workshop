@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Teacher Dashboard</h2>
+    
+    <section>
+      <h3>Upload New Story</h3>
+      <input type="text" id="storyTitle" placeholder="Story Title">
+      <textarea id="storyContent" placeholder="Story Content"></textarea>
+      <button onclick="addStory()">Add Story</button>
+    </section>
+
+    <section>
+      <h3>Class Progress</h3>
+      <div id="studentsList"></div>
+    </section>
+
+    <section>
+      <h3>Leaderboard</h3>
+      <ol id="leaderboard"></ol>
+    </section>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

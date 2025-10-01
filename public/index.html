@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Adventure Story Workshop</h1>
+  <button onclick="logout()">Logout</button>
+  <button onclick="openSettings()">Settings</button>
+</header>
+
+<main>
+  <h2 id="welcomeMessage"></h2>
+
+  <section id="avatarSection">
+    <h3>Your Avatar</h3>
+    <div id="currentAvatar"></div>
+    <div id="avatarSelection" style="display:flex;gap:10px;margin-top:10px;"></div>
+  </section>
+
+  <section>
+    <h3>Stories</h3>
+    <button onclick="completeStory(1)">Complete Story 1</button>
+    <button onclick="completeStory(2)">Complete Story 2</button>
+    <button onclick="completeStory(3)">Complete Story 3</button>
+  </section>
+
+  <section>
+    <h3>Leaderboard</h3>
+    <ul id="leaderboard"></ul>
+  </section>
+
+  <section id="studentBadgesSection">
+    <h3>Your Badges</h3>
+    <div id="studentBadges" style="display:flex; gap:5px;"></div>
+  </section>
+
+</main>
+
+<!-- Settings modal -->
+<div id="settingsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSettings()">&times;</span>
+    <h3>Settings</h3>
+    <h4>Change Avatar</h4>
+    <div id="avatarSelectionSettings" style="display:flex;gap:10px;"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
